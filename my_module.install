@@ -1,0 +1,37 @@
+<?php
+
+function my_module_install() {
+  $schema['table_new'] = array(
+    // Example (partial) specification for table "node".
+    'description' => 'The base table for nodes.',
+    'fields' => array(
+      'nid' => array(
+        'description' => 'The primary identifier for a node.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+		'auto_increment' => TRUE,
+      ),
+      'firstname' => array(
+        'description' => 'Defines first name of user.',
+        'type' => 'varchar',
+		'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'lastname' => array(
+        'description' => 'Defines last name of user.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    
+   'primary key' => array('nid'),
+            <strong> 'auto increment' => 1,</strong>
+    ),
+  );
+  return $schema;
+}
+
+?>

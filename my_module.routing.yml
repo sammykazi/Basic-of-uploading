@@ -1,0 +1,7 @@
+demo_module.list: 
+  defaults: 
+    _controller: '\Drupal\my_module\Controller\MyController::demo'
+    _title: 'Welcome to my Custom Module'
+  path: /demo
+  requirements: 
+    _permission: 'access content'

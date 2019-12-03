@@ -1,0 +1,6 @@
+menulist.admin:
+  title: 'Custom module settings'
+  description: 'example of how to make an menu settings to a module'
+  parent: system.admin_config_development
+  route_name: sample.demo
+  weight: 100
